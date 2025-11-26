@@ -2,12 +2,38 @@
 __pycache__/
 *.pyc
 
+# OS files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+venv/
+
 # Jupyter
 .ipynb_checkpoints/
 
-# Virtual env
-.venv/
+# PyCharm / IntelliJ
+.idea/
 
-# Data (keep big raw files local)
+# Data
 data/*
+!data/.gitkeep
 !data/README.md
+
+# Logs
+*.log
+
+# Coverage / test outputs
+htmlcov/
+.coverage
+.tox/

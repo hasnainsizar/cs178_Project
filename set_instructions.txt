@@ -1,0 +1,71 @@
+====================================
+   CS178 PROJECT – SETUP GUIDE
+====================================
+
+This document explains how to set up your local environment and get started working on the project. Follow these steps in order.
+
+NOTE: Most of the work is done in designated notebooks for each model.
+
+------------------------------------
+1️⃣  Clone the Repository
+------------------------------------
+Open a terminal and run:
+
+    git clone https://github.com/hasnainsizar/cs178_Project.git
+    cd cs178_Project
+
+------------------------------------
+2️⃣  Create a Virtual Environment
+------------------------------------
+
+Mac/Linux:
+
+    python3 -m venv .venv
+    source .venv/bin/activate
+
+Windows (PowerShell):
+
+    python -m venv .venv
+    .venv\Scripts\activate
+
+------------------------------------
+3️⃣  Install Dependencies
+------------------------------------
+
+    pip install -r requirements.txt
+
+Make sure installation completes without errors.
+
+------------------------------------
+4️⃣  Open in VS Code
+------------------------------------
+
+From the terminal (while inside the project folder):
+
+    code . # to open VS Code
+
+Make sure these VS Code extensions are installed:
+    • Python
+    • Jupyter
+
+When opening a notebook, select the Python interpreter from the virtual environment (.venv).
+
+------------------------------------
+5️⃣  Dataset Handling (IMPORTANT)
+------------------------------------
+
+We are using the Adult dataset via the `ucimlrepo` package.
+⚠ No manual CSV download is required.
+
+In notebooks, the dataset is loaded like this:
+    
+    from ucimlrepo import fetch_ucirepo
+    adult = fetch_ucirepo(id=2)
+
+The notebook combines features and target automatically.
+No need to place anything in the /data/ folder.
+
+=============================
+  You're all set to begin 🚀
+=============================
+
