@@ -1,20 +1,13 @@
-# Data
-*.csv
-*.data
-*.json
-*.pkl
-*.h5
-*.model
+# Python
+__pycache__/
+*.pyc
 
 # Jupyter
 .ipynb_checkpoints/
-__pycache__/
 
-# Environment
-.env
-venv/
-.env/
+# Virtual env
+.venv/
 
-# OS
-.DS_Store
-Thumbs.db
+# Data (keep big raw files local)
+data/*
+!data/README.md
